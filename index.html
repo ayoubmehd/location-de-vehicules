@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>location de véhicules</title>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+  </head>
+  <body>
+    <nav class="absolute">
+      <div class="container">
+        <div class="logo">We Rent Cars</div>
+
+        <ul class="nav-menu">
+          <li><a href="">Home</a></li>
+          <li><a href="">Gallery</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li>
+            <a class="cta" href="">
+              <span class="overlay animate-ltr"></span>
+              <span class="text">Reservatios</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header style="background-image: url('./images/car-368636_1280.jpg')">
+      <h1>Some CTA Text</h1>
+      <div class="content container">
+        <div id="cards" class="flex">
+          <div class="card active">
+            <img src="./images/car-368636_1280.jpg" alt="" />
+            <div class="text">
+              <h3>Car title</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <a class="cta" href="">Reservatios</a>
+      </div>
+    </header>
+    <section class="testemonial">
+      <div class="container">
+        <h2>Testemonial</h2>
+        <div class="container flex">
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Tented Cars -->
+    <section class="top-rented-cars">
+      <div class="container">
+        <h2>Top renter cars</h2>
+        <div class="container flex">
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+        </div>
+      </div>
+    </section>
+    <footer></footer>
+    <script>
+      var sourses = [
+        "./images/car-368636_1280.jpg",
+        "./images/car-5342693_1280.jpg",
+        "./images/car-368636_1280.jpg",
+        "./images/mercedes-5407962_1280.jpg",
+        "./images/rent-a-car-664986_1280.jpg",
+        "./images/car-5342693_1280.jpg",
+        "./images/rent-a-car-350324_1280.jpg",
+        "./images/mercedes-5407962_1280.jpg",
+        "./images/rent-a-car-664986_1280.jpg",
+        "./images/car-368636_1280.jpg",
+        "./images/rent-a-car-664986_1280.jpg",
+        "./images/photomanipulation-2110496_1280.jpg",
+        "./images/car-368636_1280.jpg",
+        "./images/rent-a-car-664986_1280.jpg",
+      ];
+
+      var element = document.getElementById("cards");
+
+      sourses.forEach((elm) => {
+        element.innerHTML += `
+        <div class="card">
+          <img src="${elm}" alt="" />
+          <div class="text">
+            <h3>Car title</h3>
+          </div>
+        </div>
+      `;
+      });
+    </script>
+  </body>
+</html>

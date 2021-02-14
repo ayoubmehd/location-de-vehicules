@@ -1,0 +1,16 @@
+body > header {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+body > header .container {
+  max-height: 250px;
+}
+body > header > * {
+  width: 100%;
+}
