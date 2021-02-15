@@ -70,6 +70,25 @@ a {
 .animate-rtl {
   transform-origin: right;
 }
+
+/* Spacing */
+
+.m {
+  margin: 1rem;
+}
+
+.my-3 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.my-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.my {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 /**
   Nav menu Style
 
@@ -82,6 +101,14 @@ body > nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.logo {
+  color: #fff;
+}
+.logo span {
+  display: block;
+  font-size: 1.5rem;
 }
 
 .nav-menu {
@@ -110,6 +137,28 @@ body > nav .container {
   white-space: nowrap;
   min-height: max-content;
 }
+.wrap {
+  flex-wrap: wrap;
+}
+.jcc {
+  justify-content: center;
+}
+.aic {
+  align-items: center;
+}
+
+/* Text */
+.t-center {
+  text-align: center;
+}
+
+.t-primary {
+  color: var(--main-color);
+}
+
+.t-bold {
+  font-weight: bold;
+}
 
 .container::-webkit-scrollbar {
   display: none;
@@ -127,6 +176,9 @@ body > nav .container {
   align-items: flex-end;
   cursor: pointer;
 }
+.card.fix-height {
+  height: 250px;
+}
 .card img {
   position: absolute;
   top: 0;
@@ -134,6 +186,8 @@ body > nav .container {
   object-fit: cover;
   max-height: 100%;
   z-index: 9;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .card .text {
   background-color: #fff;
