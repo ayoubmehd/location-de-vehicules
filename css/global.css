@@ -12,6 +12,7 @@
   --main-color: rgb(0, 140, 255);
   --main-color-hover: rgb(2, 130, 235);
   --body-color: rgb(245, 245, 245);
+  --min-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
 }
 
 .primary-c {
@@ -28,11 +29,40 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
+textarea {
+  height: 90px;
+  max-width: 100%;
+}
+
+input {
+  height: 30px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 2px;
+  border: 1px solid;
+  outline: none;
+}
+
 .absolute {
   position: absolute;
   width: 100%;
+  z-index: 9999;
 }
-
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .cta {
   display: inline-block;
   width: 150px;
@@ -45,13 +75,11 @@ a {
   border-radius: 4px;
   position: relative;
   overflow: hidden;
+  font-weight: bold;
+  border: none;
+  outline: none;
 }
 .cta .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background-color: var(--main-color-hover);
   z-index: 9;
   transform: scaleX(0);
@@ -102,6 +130,10 @@ body > nav .container {
   justify-content: space-between;
   align-items: center;
 }
+
+/**
+  colors
+*/
 
 .logo {
   color: #fff;
@@ -154,6 +186,9 @@ body > nav .container {
 
 .t-primary {
   color: var(--main-color);
+}
+.t-danger {
+  color: rgb(177, 1, 1);
 }
 
 .t-bold {

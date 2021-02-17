@@ -1,3 +1,14 @@
+.content {
+  overflow: visible;
+}
+.card {
+  transition: transform 500ms linear;
+}
+.card .overlay {
+  background-color: #000;
+  opacity: 0.6;
+  z-index: 10;
+}
 body > header {
   height: 100vh;
   background-repeat: no-repeat;
@@ -13,18 +24,44 @@ body > header .container {
 }
 body > header > * {
   width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+body > header .overlay {
+  background-color: #fff;
+  opacity: 0.6;
+  z-index: 1;
+}
+body > header .card.active {
+  transform: scale(1.1);
+}
+body > header .cta-text {
+  margin-top: auto;
 }
 
 /* Testemonial */
 .testemonial .card {
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 .testemonial .card .text {
-  display: none;
-  width: 80%;
+  width: 90%;
   height: 80%;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 300ms linear;
 }
 .testemonial .card:hover .text {
-  display: block;
+  transform: scaleX(1);
+}
+
+/* Top Rented Cars */
+.top-rented-cars .card .overlay {
+  opacity: 0;
+  transition: opacity 400ms linear;
+}
+
+.top-rented-cars .card:hover .overlay {
+  opacity: 0.4;
 }

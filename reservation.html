@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>location de véhicules</title>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/reservation.css" />
+  </head>
+  <body>
+    <nav class="">
+      <div class="container">
+        <div class="logo t-bold">
+          <span class="t-primary">We</span> Rent Cars
+        </div>
+
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li>
+            <a class="cta" href="reservation.html">
+              <span class="overlay animate-ltr"></span>
+              <span class="text">Reservatios</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="my-3">
+      <div class="container">
+        <section>
+          <h2 class="my-2">Type du véhicule</h2>
+          <div class="content">
+            <div id="vehicules" class="flex aic">
+              <!-- <div class="card fix-height active">
+                <img src="./images/car-368636_1280.jpg" alt="" />
+                <div class="text">
+                  <h3>Car title</h3>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2 class="my-2">Carburant</h2>
+          <div class="content">
+            <div class="fieldset flex aic">
+              <input type="radio" value="essence" name="carburant" id="Carburant_essence" form="price_form" />
+              <label for="Carburant_essence">Essence</label>
+            </div>
+            <div class="fieldset flex aic">
+              <input type="radio" value="diesel" name="carburant" id="Carburant_diesel" form="price_form" />
+              <label for="Carburant_diesel">Diesel</label>
+            </div>
+            <div class="fieldset flex aic">
+              <input type="radio" value="electrique" name="carburant" id="Carburant_electrique" form="price_form" />
+              <label for="Carburant_electrique">Electrique</label>
+            </div>
+            <div class="fieldset flex aic">
+              <input type="radio" value="hybride" name="carburant" id="Carburant_hybride" form="price_form" />
+              <label for="Carburant_hybride">Hybride</label>
+            </div>
+          </div>
+        </section>
+        <section id="boite_vitesse">
+          <h2 class="my-2">boite à vitesse</h2>
+          <div class="content">
+            <div class="fieldset flex aic">
+              <input type="radio" value="manuelle" name="boite_vitesse" id="boite_manuelle" form="price_form" />
+              <label for="boite_manuelle">Manuelle</label>
+            </div>
+          <div class="content">
+            <div class="fieldset flex aic">
+              <input type="radio" value="automatique" name="boite_vitesse" id="boite_automatique" form="price_form" />
+              <label for="boite_automatique">Automatique</label>
+            </div>
+          </div>
+        </section>
+
+        <section class="my-2">
+          <form id="price_form" action="">
+            <label for="duree">durée de réservation</label>
+            <input type="number" class="my" name="nb_jours" />
+            <button type="submit" class="cta">Calculer le prix</button>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="./js/data.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

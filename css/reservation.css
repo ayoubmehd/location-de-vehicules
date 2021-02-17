@@ -1,0 +1,52 @@
+section {
+  width: 60%;
+  margin: 0 auto;
+}
+.card .text {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.card .text > * {
+  max-width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card:not(.active) {
+  opacity: 0.7;
+}
+
+.fieldset {
+  margin: 0 1rem;
+}
+
+.fieldset label {
+  padding: 5px 15px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"]:checked ~ label {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.prix-total {
+  position: fixed;
+  right: 0;
+  bottom: 40px;
+  background-color: #fff;
+  border-radius: 4px;
+  min-width: 60px;
+  min-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 20px;
+  box-shadow: var(--min-box-shadow);
+}
