@@ -1,5 +1,5 @@
 .content {
-  overflow: visible;
+  overflow: auto;
 }
 .card {
   transition: transform 500ms linear;
@@ -32,9 +32,17 @@ body > header .overlay {
   background-color: #fff;
   opacity: 0.6;
   z-index: 1;
+  transition: opacity 500ms linear;
 }
-body > header .card.active {
-  transform: scale(1.1);
+/* body > header .flex {
+  
+} */
+body > header .card .overlay {
+  background-color: #333;
+  opacity: 0.6;
+}
+body > header .card.active .overlay {
+  opacity: 0;
 }
 body > header .cta-text {
   margin-top: auto;

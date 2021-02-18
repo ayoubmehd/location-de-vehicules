@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var type = {
+        moto: {
+          carburant: ["essence", "electrique"],
+          boite: "",
+          prix: 100,
+        },
+      };
+      var per = { essence: 12, electrique: 34 };
+      var total = 0;
+
+      function typechoix() {
+        var select = document.getElementById("select").value;
+
+        var txt = "<option ></option>";
+        for (var i = 0; i < type[select]["carburant"].length; i++) {
+          txt =
+            txt +
+            "<option value='" +
+            type[select]["carburant"][i] +
+            "'>" +
+            type[select]["carburant"][i] +
+            "</option>";
+        }
+        // alert(txt);
+        document.getElementById("select1").innerHTML = txt;
+      }
+      function calcule() {}
+    </script>
+    <select id="select" onchange="typechoix()">
+      <option></option>
+      <option value="moto">moto</option>
+      <option value="voiture">voiture</option>
+    </select>
+    <br />
+    <select id="select1"></select>
+    <button onclick="calcule()">ok</button>
+  </body>
+</html>

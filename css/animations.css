@@ -5,6 +5,13 @@
   animation: fade-in 250ms linear;
 }
 
+.slide-up {
+  animation: slide-up 250ms linear;
+}
+.slide-down {
+  animation: slide-down 250ms linear;
+}
+
 @keyframes fade-out {
   from {
     opacity: 1;

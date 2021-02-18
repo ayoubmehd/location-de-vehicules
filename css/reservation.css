@@ -28,6 +28,11 @@ section {
   border-radius: 2px;
   cursor: pointer;
 }
+
+.fieldset input,
+.fieldset textarea {
+  display: block;
+}
 input[type="radio"] {
   display: none;
 }

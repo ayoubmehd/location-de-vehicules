@@ -1,7 +1,9 @@
-.contact form {
-  display: block;
-  width: 60%;
-  margin: 0 auto;
+@media (min-width: 576px) {
+  .contact form {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+  }
 }
 .contact fieldset {
   border: 0;
