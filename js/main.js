@@ -71,15 +71,14 @@ vehiculesElm.addEventListener("click", clickTypeDeVehicule);
 priceForm.addEventListener("submit", function (event) {
   event.preventDefault();
   var totalElm = document.querySelector(".prix-total");
+
+  nbJours = priceForm.nb_jours.value;
+
   if (totalElm) {
-    console.log(totalElm);
     totalElm.remove();
-    // totalElm;
   }
   var total =
-    (currentVehicule.prix + carburantPerc() + boiteVitessePerc()) *
-    priceForm["nb_jours"].value;
-  console.log(total);
+    (currentVehicule.prix + carburantPerc() + boiteVitessePerc()) * nbJours;
 
   document.body.insertAdjacentHTML(
     "afterend",
@@ -90,3 +89,11 @@ priceForm.addEventListener("submit", function (event) {
   `
   );
 });
+
+// function getJour() {
+//   var year = new Date().getFullYear();
+//   console.log(
+//     new Date(year, priceForm.from_month.value, priceForm.from_day.value)
+//   );
+//   // console.log(priceForm.from_month);
+// }
