@@ -30,7 +30,7 @@ body > header > * {
 
 body > header .overlay {
   background-color: #fff;
-  opacity: 0.6;
+  opacity: 0.8;
   z-index: 1;
   transition: opacity 500ms linear;
 }
@@ -41,7 +41,8 @@ body > header .card .overlay {
   background-color: #333;
   opacity: 0.6;
 }
-body > header .card.active .overlay {
+body > header .card.active .overlay,
+body > header .card:hover .overlay {
   opacity: 0;
 }
 body > header .cta-text {

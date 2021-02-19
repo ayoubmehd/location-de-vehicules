@@ -263,7 +263,11 @@ body > nav .container .burger-icon {
   font-weight: bold;
 }
 
-.container::-webkit-scrollbar {
+.scripllable {
+  scrollbar-width: none;
+}
+
+.scripllable::-webkit-scrollbar {
   display: none;
 }
 
