@@ -22,6 +22,7 @@
 body {
   background-color: var(--body-color);
   font-family: "Montserrat", sans-serif;
+  padding-bottom: 3rem;
 }
 
 a {
