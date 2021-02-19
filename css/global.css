@@ -185,6 +185,7 @@ body > nav .container .burger-icon {
   }
   .nav-menu {
     display: flex;
+    padding: 0;
   }
   .nav-menu > li {
     padding: 0 15px;
